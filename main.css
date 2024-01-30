@@ -22,6 +22,9 @@ body {
     min-height: 100vh;
     font-family: "Space Mono", sans-serif;
     background-color: var(--light-grayish-cyan);
+    background-image: url("/images/logo.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 8%;
 }
 input {
     font-family: "Space Mono", sans-serif;
@@ -224,20 +227,27 @@ label {
 /* ! Responsive Sizes */
 /* Tablet */
 @media screen and (max-width: 769px) {
+    /* ! Global */
+    body {
+        background-position: 50% 4%;
+    }
     /* ? Outer Container */
     #outer-container {
         width: 700px;
         height: 450px;
     }
-    /* ? Custom Tip */
 }
 /* Mobile L */
 @media screen and (max-width: 426px) {
+    /* ! Global */
+    body {
+        background-position: 50% 5%;
+    }
     /* ? Outer Container */
     #outer-container {
         width: 400px;
         height: 700px;
-        margin: 3rem 0;
+        margin: 8rem 0 0 0;
     }
     /* ? Inner Container */
     #inner-container {
@@ -272,11 +282,15 @@ label {
 }
 /* Mobile M */
 @media screen and (max-width: 376px) {
+    /* ! Global */
+    body {
+        background-position: 50% 3%;
+    }
     /* ? Outer Container */
     #outer-container {
         width: 400px;
         height: 700px;
-        margin: 2rem 1rem;
+        margin: 7rem 0 0 0;
     }
     /* ? Totals */
     .grand-total {
@@ -285,11 +299,15 @@ label {
 }
 /* Mobile S */
 @media screen and (max-width: 321px) {
+    /* ! Global */
+    body {
+        background-position: 50% 3%;
+    }
     /* ? Outer Container */
     #outer-container {
         width: 400px;
         height: 700px;
-        margin: 0.5rem;
+        margin: 6rem 0 0 0;
     }
     /* ? Grand Totals */
     .grand-total {
