@@ -46,7 +46,6 @@ input[type=number]::-webkit-inner-spin-button {
 input:hover {
     cursor: pointer;
 }
-/* ? Labels */
 label {
     color: var(--dark-grayish-cyan);
 }
@@ -55,9 +54,8 @@ label {
     left: 1rem;
     top: 40px;
 }
-/* ! Options */
-/* ? Tip Container */
-#tip-container {
+/* ? Outer Container */
+#outer-container {
     width: 800px;
     height: 450px;
 }
@@ -67,20 +65,20 @@ label {
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "options display";
+    "tip-screen-outer display";
     background-color: var(--white);
     border-radius: 25px;
     padding: 2rem;
     width: 100%;
     height: 100%;
 }
-/* ? Tip Screen */
-#tip-screen {
+/* ? Outer Tip Screen, Outer Display */
+#tip-screen-outer {
     display: flex;
-    grid-area: options;
+    grid-area: tip-screen-outer;
     flex-direction: row;
 }
-#display {
+#display-outer {
     display: flex;
     width: 100%;
     height: 100%;
@@ -88,7 +86,7 @@ label {
     margin-left: 10px;
     flex-direction: column;
 }
-/* ? Bill */
+/* ? Bill Container */
 #bill-container {
     display: flex;
     justify-content: center ;
@@ -136,7 +134,7 @@ label {
     background-color: var(--very-light-grayish-cyan);
     color:var(--very-dark-cyan);
 }
-/* ? Number of People */
+/* ? Number of People Container */
 #number-of-people-container {
     display: flex;
     justify-content: center ;
@@ -146,9 +144,8 @@ label {
     gap: 5px;
     position: relative;
 }
-/* ! Display */
-/* ? Details */
-#details {
+/* ? Display Inner */
+#display-inner {
     background-color: var(--very-dark-cyan);
     color: var(--white);
     height: 100%;
