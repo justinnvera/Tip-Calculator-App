@@ -35,10 +35,12 @@ function showNumberOfPeopleErrorMessage() {
 // Adds "focus" event listeners to billInput & numberofPeopleInput. If activated, it calls for a blue border.
 billInput.addEventListener("focus", () => blueBorder(billInput));
 numberOfPeopleInput.addEventListener("focus", () => blueBorder(numberOfPeopleInput));
+customTipOptionInput.addEventListener("focus", () => blueBorder(customTipOptionInput));
 // ? Unhover Effects
 // Adds "blur" event listeners to billInput & numberofPeopleInput. If activated, it calls for a red border.
 billInput.addEventListener("blur", () => noBorder(billInput));
 numberOfPeopleInput.addEventListener("blur", () => noBorder(numberOfPeopleInput));
+customTipOptionInput.addEventListener("blur", () => noBorder(customTipOptionInput));
 // ? Calls to Validate
 // Adds "blur" event listen to billInput & numberofPeopleInput. If activated, it calls for a check if the input is left empty or 0.
 billInput.addEventListener("blur", () => billCheck(billInput));
