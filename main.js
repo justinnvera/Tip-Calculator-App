@@ -105,6 +105,12 @@ customTipOptionInput.addEventListener("input", () => {
     // Get the value from the custom tip option input
     customTipValue = parseFloat(customTipOptionInput.value)/100;
 })
+// Adds a percent sign on exit of custom tip option.
+customTipOptionInput.addEventListener("blur", () => {
+    if (customTipOptionInput.value.includes("%") === false) {
+        customTipOptionInput.value += "%";
+    }   
+})
 // Add an event listner for number of people input
 numberOfPeopleInput.addEventListener("input", () => {
     // Get the value from number of people input

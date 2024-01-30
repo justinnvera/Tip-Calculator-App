@@ -141,7 +141,9 @@ label {
 #custom-tip-option {
     color: var(--dark-grayish-cyan);
     background-color: var(--very-light-grayish-cyan);
-    color:var(--very-dark-cyan);
+    flex-grow: 1;
+    padding-right: 0;
+    text-align: center;
 }
 /* ? Number of People Container */
 #number-of-people-container {
@@ -227,6 +229,7 @@ label {
         width: 700px;
         height: 450px;
     }
+    /* ? Custom Tip */
 }
 /* Mobile L */
 @media screen and (max-width: 426px) {
@@ -246,6 +249,7 @@ label {
         "display";
         padding: 1.5rem;
     }
+    /* ? Custom Tip */
     /* ? Display Inner */
     #display-inner {
         padding: 1rem;
@@ -290,5 +294,11 @@ label {
     /* ? Grand Totals */
     .grand-total {
         font-size: 1.5rem;
+    }
+    label {
+        font-size: 0.8rem;
+    }
+    .error {
+        font-size: 0.8rem;
     }
 }
