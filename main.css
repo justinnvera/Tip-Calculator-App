@@ -219,3 +219,76 @@ label {
     color: #fd1a1a;
     display: none;
 }
+/* ! Responsive Sizes */
+/* Tablet */
+@media screen and (max-width: 769px) {
+    /* ? Outer Container */
+    #outer-container {
+        width: 700px;
+        height: 450px;
+    }
+}
+/* Mobile L */
+@media screen and (max-width: 426px) {
+    /* ? Outer Container */
+    #outer-container {
+        width: 400px;
+        height: 700px;
+        margin: 3rem 0;
+    }
+    /* ? Inner Container */
+    #inner-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 59% 1% 40%;
+        grid-template-areas: 
+        "tip-screen-outer" 
+        "space"
+        "display";
+        padding: 1.5rem;
+    }
+    /* ? Display Inner */
+    #display-inner {
+        padding: 1rem;
+    }
+    #tip-details {
+        gap: 1rem;
+    }
+    #resetBTN {
+        height: 45px;
+        background-color: var(--strong-cyan);
+        opacity: 0.3;
+        font-family: "Space Mono", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 1rem;
+        color: var(--dark-grayish-cyan);
+        border-radius: 5px;
+        transition: all ease-in-out 0.1s;
+    }
+}
+/* Mobile M */
+@media screen and (max-width: 376px) {
+    /* ? Outer Container */
+    #outer-container {
+        width: 400px;
+        height: 700px;
+        margin: 2rem 1rem;
+    }
+    /* ? Totals */
+    .grand-total {
+        font-size: 2rem;
+    }
+}
+/* Mobile S */
+@media screen and (max-width: 321px) {
+    /* ? Outer Container */
+    #outer-container {
+        width: 400px;
+        height: 700px;
+        margin: 0.5rem;
+    }
+    /* ? Grand Totals */
+    .grand-total {
+        font-size: 1.5rem;
+    }
+}
