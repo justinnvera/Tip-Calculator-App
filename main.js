@@ -107,9 +107,14 @@ customTipOptionInput.addEventListener("input", () => {
 })
 // Adds a percent sign on exit of custom tip option.
 customTipOptionInput.addEventListener("blur", () => {
+    // If the input doesn't already have a "%" and has number inputted
     if (customTipOptionInput.value.includes("%") === false) {
         customTipOptionInput.value += "%";
-    }   
+    } 
+    // If the input is empty
+    if (customTipOptionInput.value === "%") {
+        customTipOptionInput.value = "";
+    }
 })
 // Add an event listner for number of people input
 numberOfPeopleInput.addEventListener("input", () => {
